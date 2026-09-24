@@ -8,5 +8,5 @@ url = sys.argv[1] if len(sys.argv) > 1 else "https://example.github.io/qingteng-
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.makedirs(os.path.join(root, "assets"), exist_ok=True)
 out = os.path.join(root, "assets", "qr.png")
-segno.make(url, error="m").save(out, scale=8, border=2, dark="#1f4a36", light="#ffffff")
+segno.make(url, error="m").save(out, scale=8, border=2, dark="#142a45", light="#ffffff")
 print(f"二维码已生成：{out}\n指向：{url}")
